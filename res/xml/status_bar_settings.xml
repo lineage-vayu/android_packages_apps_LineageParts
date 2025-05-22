@@ -17,21 +17,6 @@
         android:entryValues="@array/status_bar_quick_qs_pulldown_values"
         android:defaultValue="0" />
 
-    <Preference
-        android:key="network_traffic_state"
-        android:title="@string/network_traffic_state_title"
-        android:summary="@string/network_traffic_state_summary"
-        android:fragment="org.lineageos.lineageparts.statusbar.NetworkTrafficSettings"
-        android:defaultValue="false" />
-
-
-    <lineageos.preference.LineageSystemSettingSwitchPreference
-            android:key="config_enableOngoingProgressBarChip"
-            android:title="@string/ongoing_action_chip_title"
-            android:summary="@string/ongoing_action_chip_summary"
-            android:defaultValue="false"
-            android:persistent="true"/>
-
     <PreferenceCategory
         android:title="@string/status_bar_icons_title">
 
@@ -42,18 +27,6 @@
             <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
         </Preference>
 
-        <lineageos.preference.LineageSystemSettingSwitchPreference
-            android:key="data_disabled_icon"
-            android:title="@string/data_disabled_icon_title"
-            android:summary="@string/data_disabled_icon_summary"
-            android:defaultValue="true"/>
-
-        <lineageos.preference.LineageSystemSettingSwitchPreference
-            android:key="show_fourg_icon"
-            android:title="@string/show_fourg_icon_title"
-            android:summary="@string/show_fourg_icon_summary"
-            android:defaultValue="false"/>
-            
     </PreferenceCategory>
 
     <PreferenceCategory
